@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { signOutAction } from "@/lib/auth/actions";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "หน้ารวมพนักงาน" },
@@ -27,12 +28,14 @@ export function SiteHeader() {
           </div>
         </div>
 
-        <Link
-          href="/"
-          className="font-heading text-xs font-semibold text-muted-foreground hover:text-foreground sm:hidden"
-        >
-          ออกจากระบบ
-        </Link>
+        <form action={signOutAction} className="sm:hidden">
+          <button
+            type="submit"
+            className="font-heading text-xs font-semibold text-muted-foreground hover:text-foreground"
+          >
+            ออกจากระบบ
+          </button>
+        </form>
       </div>
 
       <nav className="flex items-center gap-1 overflow-x-auto whitespace-nowrap">
@@ -52,12 +55,14 @@ export function SiteHeader() {
         ))}
       </nav>
 
-      <Link
-        href="/"
-        className="hidden font-heading text-sm font-semibold text-muted-foreground hover:text-foreground sm:block"
-      >
-        ออกจากระบบ
-      </Link>
+      <form action={signOutAction} className="hidden sm:block">
+        <button
+          type="submit"
+          className="font-heading text-sm font-semibold text-muted-foreground hover:text-foreground"
+        >
+          ออกจากระบบ
+        </button>
+      </form>
     </header>
   );
 }

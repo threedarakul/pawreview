@@ -1,21 +1,15 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useActionState, useState } from "react";
 import { Eye, EyeOff, Mail, Lock, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { signInWithEmail } from "./actions";
 
 export default function LoginPage() {
-  const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    router.push("/dashboard");
-  }
+  const [state, formAction, isPending] = useActionState(signInWithEmail, null);
 
   return (
     <div className="flex min-h-full flex-1 flex-col items-center justify-center bg-background px-4 py-16">
@@ -30,7 +24,7 @@ export default function LoginPage() {
       </div>
 
       <form
-        onSubmit={handleSubmit}
+        action={formAction}
         className="mt-8 flex w-full max-w-md flex-col gap-5 rounded-xl border border-border bg-card p-6"
       >
         <div className="flex flex-col gap-1.5">
@@ -39,6 +33,7 @@ export default function LoginPage() {
             <Mail className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               id="email"
+              name="email"
               type="email"
               placeholder="hr.admin@company.com"
               className="pl-9"
@@ -53,6 +48,7 @@ export default function LoginPage() {
             <Lock className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               id="password"
+              name="password"
               type={showPassword ? "text" : "password"}
               placeholder="••••••••"
               className="px-9"
@@ -73,18 +69,12 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between text-sm">
-          <label className="flex items-center gap-2 text-muted-foreground">
-            <input type="checkbox" defaultChecked className="accent-primary" />
-            จำฉันไว้ในระบบ
-          </label>
-          <Link href="#" className="font-medium text-primary hover:underline">
-            ลืมรหัสผ่าน?
-          </Link>
-        </div>
+        {state?.error && (
+          <p className="text-sm text-destructive">{state.error}</p>
+        )}
 
-        <Button type="submit" size="lg" className="rounded-full">
-          เข้าสู่ระบบ 🐾
+        <Button type="submit" size="lg" className="rounded-full" disabled={isPending}>
+          {isPending ? "กำลังเข้าสู่ระบบ..." : "เข้าสู่ระบบ 🐾"}
         </Button>
 
         <p className="flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
