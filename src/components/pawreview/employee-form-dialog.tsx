@@ -12,13 +12,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { Employee } from "@/lib/sample-data";
+import { Employee } from "@/lib/db/schema";
+import { EmployeeInput } from "@/app/dashboard/actions";
 
 type EmployeeFormDialogProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   employee?: Employee;
-  onSave: (employee: Omit<Employee, "id">) => void;
+  onSave: (employee: EmployeeInput) => void;
+  externalError?: string;
+  saving?: boolean;
 };
 
 const emptyForm = { name: "", startDate: "", reviewDueDate: "" };
@@ -28,6 +31,8 @@ export function EmployeeFormDialog({
   onOpenChange,
   employee,
   onSave,
+  externalError,
+  saving,
 }: EmployeeFormDialogProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -38,6 +43,8 @@ export function EmployeeFormDialog({
             employee={employee}
             onSave={onSave}
             onClose={() => onOpenChange(false)}
+            externalError={externalError}
+            saving={saving}
           />
         )}
       </DialogContent>
@@ -49,10 +56,14 @@ function EmployeeFormFields({
   employee,
   onSave,
   onClose,
+  externalError,
+  saving,
 }: {
   employee?: Employee;
-  onSave: (employee: Omit<Employee, "id">) => void;
+  onSave: (employee: EmployeeInput) => void;
   onClose: () => void;
+  externalError?: string;
+  saving?: boolean;
 }) {
   const [form, setForm] = useState(
     employee
@@ -74,9 +85,11 @@ function EmployeeFormFields({
       setError("วันครบกำหนด review ต้องอยู่หลังวันเริ่มงาน");
       return;
     }
+    setError("");
     onSave(form);
-    onClose();
   }
+
+  const shownError = error || externalError;
 
   return (
     <>
@@ -128,14 +141,16 @@ function EmployeeFormFields({
           />
         </div>
 
-        {error && <p className="text-sm text-destructive">{error}</p>}
+        {shownError && <p className="text-sm text-destructive">{shownError}</p>}
       </div>
 
       <DialogFooter>
-        <Button variant="ghost" onClick={onClose}>
+        <Button variant="ghost" onClick={onClose} disabled={saving}>
           ยกเลิก
         </Button>
-        <Button onClick={handleSave}>บันทึกข้อมูล</Button>
+        <Button onClick={handleSave} disabled={saving}>
+          {saving ? "กำลังบันทึก..." : "บันทึกข้อมูล"}
+        </Button>
       </DialogFooter>
     </>
   );
