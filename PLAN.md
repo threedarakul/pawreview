@@ -30,7 +30,7 @@
 
 **Done when:** `npm run build` ผ่านในเครื่อง, เว็บ live เปิดได้จริงบน Vercel, มี `DATABASE_URL` ใน `.env.local` แล้ว, commit ไว้แล้ว
 
-**Status:** [ ] ยังไม่เริ่ม
+**Status:** [~] กำลังทำ — เว็บขึ้น live แล้วที่ https://pawreview.vercel.app (เปิดได้จริงไม่ต้องล็อกอิน), เชื่อม GitHub auto-deploy ยังไม่สำเร็จ (รอผู้ใช้เช็ค GitHub App permissions), ยังไม่ได้สร้างฐานข้อมูล Neon (รอผู้ใช้กดสร้างที่ Vercel Storage)
 
 ---
 
@@ -49,7 +49,7 @@
 
 **Done when:** `npm run lint` ผ่าน, `npm run build` ผ่าน, ทุกหน้าเปิดได้และตรงกับ mockup, commit ไว้แล้ว
 
-**Status:** [ ] ยังไม่เริ่ม
+**Status:** [x] เสร็จแล้ว — lint/build ผ่าน ทดสอบเปิดทุกหน้าจริงในเบราว์เซอร์ (มือถือ+เดสก์ท็อป) แล้ว
 
 ---
 
