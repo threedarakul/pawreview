@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-fixed": "#330f1f",
+          "tertiary": "#805062",
+          "error-container": "#ffdad6",
+          "surface-dim": "#e0d9d3",
+          "inverse-on-surface": "#f7efe9",
+          "on-primary-fixed-variant": "#852300",
+          "on-error-container": "#93000a",
+          "error": "#ba1a1a",
+          "on-tertiary-container": "#502738",
+          "on-primary-fixed": "#3a0a00",
+          "surface-container-highest": "#e8e1db",
+          "on-background": "#1e1b17",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fff8f3",
+          "on-surface": "#1e1b17",
+          "on-primary": "#ffffff",
+          "on-error": "#ffffff",
+          "surface-tint": "#ac3509",
+          "on-surface-variant": "#59413a",
+          "secondary-fixed": "#cbe6ff",
+          "outline-variant": "#e0bfb6",
+          "on-secondary-container": "#085782",
+          "primary-container": "#ff7043",
+          "on-primary-container": "#641800",
+          "surface-container-low": "#faf2ec",
+          "primary": "#ac3509",
+          "on-tertiary-fixed-variant": "#65394b",
+          "tertiary-container": "#c58da1",
+          "tertiary-fixed": "#ffd9e4",
+          "tertiary-fixed-dim": "#f2b6cb",
+          "surface-variant": "#e8e1db",
+          "secondary": "#1f638e",
+          "surface-container-high": "#eee7e1",
+          "secondary-fixed-dim": "#92cdfd",
+          "on-secondary-fixed-variant": "#004b71",
+          "background": "#fff8f3",
+          "on-secondary-fixed": "#001e30",
+          "on-tertiary": "#ffffff",
+          "primary-fixed": "#ffdbd0",
+          "inverse-primary": "#ffb59f",
+          "inverse-surface": "#33302c",
+          "outline": "#8d7169",
+          "primary-fixed-dim": "#ffb59f",
+          "surface-bright": "#fff8f3",
+          "on-secondary": "#ffffff",
+          "secondary-container": "#92cdfd",
+          "surface-container": "#f4ede6"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1rem",
+          "gutter-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Be Vietnam Pro"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Be Vietnam Pro"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Be Vietnam Pro"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(45,42,38,0.06)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="PawReview Mascot Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WUOKz2MI-slJzk9G2nsWmUotshLvgglXTZsqzhPpfLHFuPkPffJ335dsThedWtMZ9NjaAH2Pc3XjhyL0vEn8Doqd7l6_3VVIKJx8nTt5M_WpbsJfi_Dg5c_GrxI70JI7q-Y5KvcyoNRKux8b3zLn_fCM2dC1AaQJczwZbyI6vjJz1sYXoQpO3qqcu0jDAjlTQ2CuvT6FbOMBDXUTm0Ol9nk7TZtxD6GxAO7lh3KkQPHb1TYm1qGNljBGs"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">PawReview</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">HR Core</span></div><span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline-block">ระบบติดตามการประเมินพนักงาน</span></div></div><nav class="hidden md:flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-full" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-full shadow-sm"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary font-label-md rounded-full shadow-sm" data-path="landing" href="#">หน้าแรก (Landing)</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#">หน้ารวมพนักงาน (Dashboard)</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="monthly-summary" href="#">สรุปรายเดือน (Monthly Summary)</a></nav></div><div class="flex items-center gap-space-sm sm:gap-space-md"><button aria-label="Notifications" class="relative p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-title-md">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-1.5 rounded-full shadow-[0_2px_8px_rgba(45,42,38,0.04)]"><div class="relative p-0.5 rounded-full bg-primary-fixed"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0B-rhX_dzI-Cp19AvqqJO9WIvDkLRnhDXwB_q-7thc47YnJTQ7mtzNrr_kka7hdNCVGhFpJyrS9lDzG3FfDeCBbV0l9Bs3uNz4_6HTCKK8D20cVgsin8dm1cwCAMBcQeGr7ebkyVuDMHeaMVU0m9dnX67gXWDjOfVIJeDJRbSKmx3Yw7U0FaTowBdFGiXzDIigSQLingGv1t1TA7wzfHEt3RC-fmI23Fj6JcECa2lPPO__KKUWCdB"/></div><div class="hidden lg:flex flex-col pr-space-xs"><span class="font-label-md text-label-md text-on-surface leading-tight">คุณแพรวา</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">HR Admin</span></div></div><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-2 rounded-full font-label-md text-label-md text-primary hover:bg-surface-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-title-md">logout</span><span>ออกจากระบบ</span></a></div></div></header><main class="w-full pt-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex-1"><div class="flex flex-col w-full">
+<section class="relative w-full overflow-hidden pt-8 pb-16 md:pt-12 md:pb-24">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-primary-fixed-dim/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-[-5%] w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 left-[-5%] w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto px-margin-mobile">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low shadow-sm mb-space-lg">
+<span class="text-base">🐾</span>
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wide">HR Probation &amp; Review Tracker</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">อบอุ่น &amp; สบายใจ ไม่หลุดเคส</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl md:text-[44px] md:leading-[54px] text-on-surface tracking-tight mb-space-md max-w-3xl">
+        บอกลาการตกหล่นวัน <span class="text-primary underline decoration-primary-fixed decoration-wavy decoration-2 underline-offset-8">Review</span> พนักงาน<br class="hidden sm:inline"/> ให้เจ้าเหมียวช่วยเตือนใจ 🐾
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl leading-relaxed">
+        ระบบส่วนตัวสำหรับ HR คอยดูแลช่วงทดลองงาน 90 – 119 วัน ติดตามสถานะอัตโนมัติ รู้ทันทีก่อนครบกำหนดหรือเกินกำหนด พร้อมสรุปผลแบบเรียลไทม์
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-space-xs px-8 py-3.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:shadow-lg hover:brightness-105 active:scale-95 transition-all" data-path="dashboard" href="#">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span>เข้าสู่ระบบจัดการ HR</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-7 py-3.5 rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low active:scale-95 transition-all" href="#features-section">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+<span>ดูวิธีใช้งานและตัวอย่าง</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm w-full max-w-2xl mt-space-xl bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-headline-sm">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant">พนักงานทั้งหมด</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">14 คน</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-[#FFF8E1]">
+<div class="w-10 h-10 rounded-full bg-[#FFE082] flex items-center justify-center text-[#F57F17]">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-[#8D6E63]">ใกล้ครบ (≤ 7 วัน)</span>
+<span class="font-headline-sm text-headline-sm text-[#F57F17]">2 คน</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-error-container/60">
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant">เกินกำหนดนัดหมาย</span>
+<span class="font-headline-sm text-headline-sm text-error">1 คน</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-5xl mx-auto mt-space-xl px-margin-mobile">
+<div class="relative bg-surface-container-lowest rounded-3xl p-space-md sm:p-space-lg shadow-xl overflow-hidden">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-[#FF8A80]"></div>
+<div class="w-3 h-3 rounded-full bg-[#FFD180]"></div>
+<div class="w-3 h-3 rounded-full bg-[#A7FFEB]"></div>
+<span class="ml-space-xs font-label-md text-label-md text-on-surface-variant font-medium">ภาพรวมกระดานติดตามสถานะประจำเดือน (HR Live Preview)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">อัปเดตอัตโนมัติ 09:00 น.</span>
+</div>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider rounded-xl">
+<th class="py-3 px-4 rounded-l-xl">พนักงาน</th>
+<th class="py-3 px-4">แผนก &amp; ตำแหน่ง</th>
+<th class="py-3 px-4">วันเริ่มงาน</th>
+<th class="py-3 px-4">อายุงานจริง</th>
+<th class="py-3 px-4">วันครบ 119 วัน</th>
+<th class="py-3 px-4 rounded-r-xl text-center">สถานะติดตาม</th>
+</tr>
+</thead>
+<tbody class="divide-none">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-xs font-bold text-on-secondary-fixed-variant">นร</div>
+<div>
+<span class="font-semibold block">ณภัทร รัตนสกุล</span>
+<span class="text-xs text-on-surface-variant">ID: EMP-1042</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-on-surface font-medium block">UI/UX Designer</span>
+<span>Product Team</span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">1 พ.ย. 2024</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">113 วัน</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface font-medium">27 ก.พ. 2025</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFF8E1] text-[#F57F17] font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#F57F17]"></span>
+                    🟡 ใกล้ครบ (เหลือ 6 วัน)
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-xs font-bold text-on-primary-fixed-variant">กพ</div>
+<div>
+<span class="font-semibold block">กวินท์ พิชิตชัย</span>
+<span class="text-xs text-on-surface-variant">ID: EMP-1039</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-on-surface font-medium block">Frontend Engineer</span>
+<span>Engineering</span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">15 ต.ค. 2024</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">122 วัน</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-error font-medium">10 ก.พ. 2025</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                    🔴 เกินกำหนด (3 วัน)
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-xs font-bold text-on-tertiary-fixed-variant">สม</div>
+<div>
+<span class="font-semibold block">สมหญิง มิ่งขวัญ</span>
+<span class="text-xs text-on-surface-variant">ID: EMP-1051</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-on-surface font-medium block">Content Specialist</span>
+<span>Marketing</span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">15 ธ.ค. 2024</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">68 วัน</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">12 เม.ย. 2025</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F5E9] text-[#2E7D32] font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#2E7D32]"></span>
+                    🟢 ปกติ (เหลือ 51 วัน)
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="text-2xl">🐱</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">ทริคเล็กๆ จากทีมเจ้าเหมียว</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">กำหนดนัดคุยล่วงหน้าช่วง 90 วัน ช่วยให้พนักงานปรับตัวและพัฒนาได้อย่างมั่นใจก่อนประเมินจริง</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-semibold hover:underline" data-path="dashboard" href="#">
+<span>ไปที่หน้า Dashboard แบบเต็ม</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full max-w-5xl mx-auto mt-12 px-margin-mobile">
+<div class="w-full bg-surface-container-low rounded-3xl p-6 sm:p-8 flex flex-col items-center justify-center overflow-hidden relative">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-rose-400 text-lg">♥</span>
+<span class="text-rose-400 text-sm">♥</span>
+<span class="text-rose-400 text-xs">♥</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface text-center mb-6">แก๊งเพื่อนเหมียวพร้อมดูแลงาน HR ให้สดใสทุกวัน</p>
+<div class="w-full max-w-3xl flex items-end justify-center gap-2 sm:gap-4 select-none pt-4">
+<div class="flex flex-col items-center group transition-transform hover:-translate-y-2">
+<div class="w-14 h-16 sm:w-20 sm:h-24 bg-[#BEE3F8] rounded-t-full relative flex items-center justify-center shadow-inner">
+<div class="absolute -top-3 left-1 w-0 h-0 border-l-[8px] sm:border-l-[12px] border-l-transparent border-r-[8px] sm:border-r-[12px] border-r-transparent border-b-[14px] sm:border-b-[18px] border-b-[#90CDF4]"></div>
+<div class="absolute -top-3 right-1 w-0 h-0 border-l-[8px] sm:border-l-[12px] border-l-transparent border-r-[8px] sm:border-r-[12px] border-r-transparent border-b-[14px] sm:border-b-[18px] border-b-[#90CDF4]"></div>
+<div class="flex flex-col items-center gap-1 mt-2">
+<div class="flex gap-3 sm:gap-5">
+<span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#2D3748] rounded-full"></span>
+<span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#2D3748] rounded-full"></span>
+</div>
+<span class="text-[10px] sm:text-xs text-[#2D3748] font-bold">ω</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">น้องส้มคราม</span>
+</div>
+<div class="flex flex-col items-center group transition-transform hover:-translate-y-2">
+<div class="w-14 h-14 sm:w-20 sm:h-20 bg-[#FED7D7] rounded-t-full relative flex items-center justify-center shadow-inner">
+<div class="absolute -top-3 left-1 w-0 h-0 border-l-[8px] sm:border-l-[12px] border-l-transparent border-r-[8px] sm:border-r-[12px] border-r-transparent border-b-[14px] sm:border-b-[18px] border-b-[#FEB2B2]"></div>
+<div class="absolute -top-3 right-1 w-0 h-0 border-l-[8px] sm:border-l-[12px] border-l-transparent border-r-[8px] sm:border-r-[12px] border-r-transparent border-b-[14px] sm:border-b-[18px] border-b-[#FEB2B2]"></div>
+<div class="flex flex-col items-center gap-1 mt-1">
+<div class="flex gap-3 sm:gap-5">
+<span class="text-[10px] sm:text-xs text-[#2D3748] font-black">^</span>
+<span class="text-[10px] sm:text-xs text-[#2D3748] font-black">^</span>
+</div>
+<span class="text-[10px] sm:text-xs text-[#E53E3E] font-bold">ω</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">น้องพีชชี่</span>
+</div>
+<div class="flex flex-col items-center group transition-transform hover:-translate-y-2">
+<div class="w-16 h-20 sm:w-24 sm:h-28 bg-[#FEFCBF] rounded-t-full relative flex items-center justify-center shadow-inner">
+<div class="absolute -top-3.5 left-1.5 w-0 h-0 border-l-[10px] sm:border-l-[14px] border-l-transparent border-r-[10px] sm:border-r-[14px] border-r-transparent border-b-[16px] sm:border-b-[20px] border-b-[#FAF089]"></div>
+<div class="absolute -top-3.5 right-1.5 w-0 h-0 border-l-[10px] sm:border-l-[14px] border-l-transparent border-r-[10px] sm:border-r-[14px] border-r-transparent border-b-[16px] sm:border-b-[20px] border-b-[#FAF089]"></div>
+<div class="flex flex-col items-center gap-1 mt-2">
+<div class="flex gap-4 sm:gap-6">
+<span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#2D3748] rounded-full"></span>
+<span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#2D3748] rounded-full"></span>
+</div>
+<span class="text-[10px] sm:text-xs text-[#B7791F] font-bold">з</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">เจ้าชีสเค้ก</span>
+</div>
+<div class="flex flex-col items-center group transition-transform hover:-translate-y-2">
+<div class="w-14 h-16 sm:w-20 sm:h-24 bg-[#E9D8FD] rounded-t-full relative flex items-center justify-center shadow-inner">
+<div class="absolute -top-3 left-1 w-0 h-0 border-l-[8px] sm:border-l-[12px] border-l-transparent border-r-[8px] sm:border-r-[12px] border-r-transparent border-b-[14px] sm:border-b-[18px] border-b-[#D6BCFA]"></div>
+<div class="absolute -top-3 right-1 w-0 h-0 border-l-[8px] sm:border-l-[12px] border-l-transparent border-r-[8px] sm:border-r-[12px] border-r-transparent border-b-[14px] sm:border-b-[18px] border-b-[#D6BCFA]"></div>
+<div class="flex flex-col items-center gap-1 mt-2">
+<div class="flex gap-3 sm:gap-5">
+<span class="text-[10px] sm:text-xs text-[#4A5568] font-bold">-</span>
+<span class="text-[10px] sm:text-xs text-[#4A5568] font-bold">-</span>
+</div>
+<span class="text-[10px] sm:text-xs text-[#4A5568] font-bold">ω</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">น้องทาโร่</span>
+</div>
+<div class="flex flex-col items-center group transition-transform hover:-translate-y-2">
+<div class="w-14 h-14 sm:w-20 sm:h-20 bg-[#C6F6D5] rounded-t-full relative flex items-center justify-center shadow-inner">
+<div class="absolute -top-3 left-1 w-0 h-0 border-l-[8px] sm:border-l-[12px] border-l-transparent border-r-[8px] sm:border-r-[12px] border-r-transparent border-b-[14px] sm:border-b-[18px] border-b-[#9AE6B4]"></div>
+<div class="absolute -top-3 right-1 w-0 h-0 border-l-[8px] sm:border-l-[12px] border-l-transparent border-r-[8px] sm:border-r-[12px] border-r-transparent border-b-[14px] sm:border-b-[18px] border-b-[#9AE6B4]"></div>
+<div class="flex flex-col items-center gap-1 mt-1">
+<div class="flex gap-3 sm:gap-5">
+<span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#2D3748] rounded-full"></span>
+<span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#2D3748] rounded-full"></span>
+</div>
+<span class="text-[10px] sm:text-xs text-[#22543D] font-bold">ω</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">น้องชาเขียว</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full py-16 bg-surface-container-low/60 rounded-3xl my-8" id="features-section">
+<div class="max-w-6xl mx-auto px-margin-mobile">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm mb-space-sm">
+<span>🌟</span>
+<span>ฟังก์ชันออกแบบมาเพื่อ HR ยุคใหม่</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-xs">
+          ทำงานง่าย สบายใจ ไม่ต้องกังวลเรื่องกำหนดวัน
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          ผสานความน่ารักกับความแม่นยำทางสถิติ จัดการข้อมูลลูกทีมได้ตรงตามไทม์ไลน์ 100%
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-[#FFF8E1] flex items-center justify-center text-3xl mb-space-md shadow-inner">
+              🚥
+            </div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#2E7D32]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#F57F17]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Smart Status Alert</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">แจ้งเตือนสถานะ 3 ระดับ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              แยกแยะทันทีด้วยสีมาตรฐาน: 🟢 สีเขียว ปกติ, 🟡 สีเหลือง ใกล้ครบ (≤ 7 วัน) และ 🔴 สีแดง เกินกำหนด ไม่พลาดช่วงนัดประเมินโปร
+            </p>
+</div>
+<div class="pt-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5 font-label-sm text-label-sm">
+<div class="flex items-center justify-between text-on-surface">
+<span>อัตราการเตือนตรงเวลา</span>
+<span class="font-bold text-primary">100%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-3xl mb-space-md shadow-inner">
+              📅
+            </div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">date_range</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Working Day Engine</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">นับวันทำงานอัตโนมัติ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              ระบบคำนวณวันทำงานจริงที่ผ่านมาโดยตัดวันเสาร์-อาทิตย์ และตั้งเตือนวันครบกำหนด 90 และ 119 วันให้อัตโนมัติในคลิกเดียว
+            </p>
+</div>
+<div class="pt-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span class="flex items-center gap-1"><span class="text-secondary font-bold">✓</span> เว้นเสาร์-อาทิตย์</span>
+<span class="flex items-center gap-1"><span class="text-secondary font-bold">✓</span> แม่นยำระดับวัน</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-3xl mb-space-md shadow-inner">
+              📊
+            </div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">pie_chart</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Monthly Executive</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">สรุปรายเดือนแบบรวดเร็ว</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              ดูภาพรวมทั้งปีหรือรายเดือนว่าช่วงไหนมีกี่คนที่ต้องเริ่มจัดทำนัดหมาย เพื่อวางแผนตารางสัมภาษณ์และกระจายงานล่วงหน้าได้อย่างสบาย
+            </p>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center justify-between w-full p-space-sm rounded-xl bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold hover:bg-surface-container transition-colors" data-path="monthly-summary" href="#">
+<span>ดูตัวอย่างหน้ารายงานสรุป</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full py-16 px-margin-mobile">
+<div class="max-w-4xl mx-auto bg-gradient-to-br from-primary-fixed to-primary-container text-on-primary-container rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-lg">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 bg-white/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-white/40 flex items-center justify-center text-3xl mb-4 backdrop-blur-sm">
+          🐱🐾
+        </div>
+<h2 class="font-headline-lg text-headline-lg sm:text-[36px] sm:leading-[44px] text-on-primary-container font-extrabold mb-3">
+          เริ่มต้นใช้งาน PawReview ฟรีวันนี้
+        </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/90 max-w-xl mb-8 leading-relaxed">
+          ให้ระบบเจ้าเหมียวดูแลพนักงานช่วงทดลองงานของคุณ เพื่อทีมที่มีความสุขและการเติบโตอย่างยั่งยืน
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="px-8 py-3.5 rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-md hover:bg-surface hover:shadow-lg transition-all active:scale-95" data-path="dashboard" href="#">
+            เข้าสู่ระบบติดตามพนักงาน
+          </a>
+<a class="px-7 py-3.5 rounded-full bg-white/20 text-on-primary-container font-label-lg text-label-lg hover:bg-white/30 transition-all backdrop-blur-sm" data-path="monthly-summary" href="#">
+            ดูตารางสรุปประจำเดือน
+          </a>
+</div>
+</div>
+</div>
+</section>
+<div class="w-full py-8 flex items-center justify-center gap-3 text-on-surface-variant/80 font-body-sm text-body-sm select-none">
+<span>🐾</span>
+<span>PawReview พร้อมช่วยเหลือ HR ทุกคนด้วยความรักและความใส่ใจ</span>
+<span>🐾</span>
+</div>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-lg"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">🐾 PawReview</span><span class="font-body-sm text-body-sm text-on-surface-variant">| ระบบติดตามวันครบกำหนด Review พนักงานแสนอบอุ่นสำหรับฝ่ายทรัพยากรบุคคล</span></div><div class="flex flex-wrap items-center justify-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">คู่มือการประเมิน (HR Guide)</a><a class="hover:text-primary transition-colors" href="#">เกณฑ์การให้คะแนน</a><a class="hover:text-primary transition-colors" href="#">นโยบายความเป็นส่วนตัว</a></div><div class="font-body-sm text-body-sm text-on-surface-variant text-center">© 2024 PawReview HR Solutions. Made with care for happy teams.</div></div></footer></body></html>

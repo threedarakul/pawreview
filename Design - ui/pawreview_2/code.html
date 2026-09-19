@@ -1,0 +1,941 @@
+<!DOCTYPE html><html lang="th" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-fixed": "#330f1f",
+          "tertiary": "#805062",
+          "error-container": "#ffdad6",
+          "surface-dim": "#e0d9d3",
+          "inverse-on-surface": "#f7efe9",
+          "on-primary-fixed-variant": "#852300",
+          "on-error-container": "#93000a",
+          "error": "#ba1a1a",
+          "on-tertiary-container": "#502738",
+          "on-primary-fixed": "#3a0a00",
+          "surface-container-highest": "#e8e1db",
+          "on-background": "#1e1b17",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fff8f3",
+          "on-surface": "#1e1b17",
+          "on-primary": "#ffffff",
+          "on-error": "#ffffff",
+          "surface-tint": "#ac3509",
+          "on-surface-variant": "#59413a",
+          "secondary-fixed": "#cbe6ff",
+          "outline-variant": "#e0bfb6",
+          "on-secondary-container": "#085782",
+          "primary-container": "#ff7043",
+          "on-primary-container": "#641800",
+          "surface-container-low": "#faf2ec",
+          "primary": "#ac3509",
+          "on-tertiary-fixed-variant": "#65394b",
+          "tertiary-container": "#c58da1",
+          "tertiary-fixed": "#ffd9e4",
+          "tertiary-fixed-dim": "#f2b6cb",
+          "surface-variant": "#e8e1db",
+          "secondary": "#1f638e",
+          "surface-container-high": "#eee7e1",
+          "secondary-fixed-dim": "#92cdfd",
+          "on-secondary-fixed-variant": "#004b71",
+          "background": "#fff8f3",
+          "on-secondary-fixed": "#001e30",
+          "on-tertiary": "#ffffff",
+          "primary-fixed": "#ffdbd0",
+          "inverse-primary": "#ffb59f",
+          "inverse-surface": "#33302c",
+          "outline": "#8d7169",
+          "primary-fixed-dim": "#ffb59f",
+          "surface-bright": "#fff8f3",
+          "on-secondary": "#ffffff",
+          "secondary-container": "#92cdfd",
+          "surface-container": "#f4ede6"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1rem",
+          "gutter-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Be Vietnam Pro"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Be Vietnam Pro"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Be Vietnam Pro"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(45,42,38,0.06)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="PawReview Mascot Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WUOKz2MI-slJzk9G2nsWmUotshLvgglXTZsqzhPpfLHFuPkPffJ335dsThedWtMZ9NjaAH2Pc3XjhyL0vEn8Doqd7l6_3VVIKJx8nTt5M_WpbsJfi_Dg5c_GrxI70JI7q-Y5KvcyoNRKux8b3zLn_fCM2dC1AaQJczwZbyI6vjJz1sYXoQpO3qqcu0jDAjlTQ2CuvT6FbOMBDXUTm0Ol9nk7TZtxD6GxAO7lh3KkQPHb1TYm1qGNljBGs"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">PawReview</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">HR Core</span></div><span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline-block">ระบบติดตามการประเมินพนักงาน</span></div></div><nav class="hidden md:flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-full" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-full shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="landing" href="#">หน้าแรก (Landing)</a><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary font-label-md rounded-full shadow-sm" data-path="dashboard" href="#">หน้ารวมพนักงาน (Dashboard)</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="monthly-summary" href="#">สรุปรายเดือน (Monthly Summary)</a><button type="button" id="exportDataBtn" class="inline-flex items-center justify-center gap-space-xs px-6 py-3 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-secondary-fixed/30 hover:text-secondary transition-all duration-200"><span class="material-symbols-outlined text-title-md text-secondary">file_download</span><span class="">ส่งออกข้อมูล (Excel/CSV)</span></button></nav></div><div class="flex items-center gap-space-sm sm:gap-space-md"><button aria-label="Notifications" class="relative p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-title-md">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-1.5 rounded-full shadow-[0_2px_8px_rgba(45,42,38,0.04)]"><div class="relative p-0.5 rounded-full bg-primary-fixed"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0B-rhX_dzI-Cp19AvqqJO9WIvDkLRnhDXwB_q-7thc47YnJTQ7mtzNrr_kka7hdNCVGhFpJyrS9lDzG3FfDeCBbV0l9Bs3uNz4_6HTCKK8D20cVgsin8dm1cwCAMBcQeGr7ebkyVuDMHeaMVU0m9dnX67gXWDjOfVIJeDJRbSKmx3Yw7U0FaTowBdFGiXzDIigSQLingGv1t1TA7wzfHEt3RC-fmI23Fj6JcECa2lPPO__KKUWCdB"></div><div class="hidden lg:flex flex-col pr-space-xs"><span class="font-label-md text-label-md text-on-surface leading-tight">คุณแพรวา</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">HR Admin</span></div></div><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-2 rounded-full font-label-md text-label-md text-primary hover:bg-surface-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-title-md">logout</span><span class="">ออกจากระบบ</span></a></div></div></header><main class="w-full pt-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex-1"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Ambient Glow & Whimsical Banner -->
+<div class="relative w-full rounded-3xl bg-surface-container-low p-space-lg lg:p-space-xl overflow-hidden mb-space-lg shadow-sm">
+<!-- Playful Background Accents -->
+<div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-primary-fixed opacity-40 blur-2xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-10 w-52 h-52 rounded-full bg-secondary-fixed opacity-50 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm w-fit">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="">อัปเดตแบบเรียลไทม์ตามปฏิทินงาน 2025</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight flex items-center gap-space-xs">
+          หน้ารวมพนักงานที่ต้อง Review
+          <span class="text-2xl select-none">📋</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          ติดตามสถานะการประเมินงานและช่วงทดลองงาน อัปเดตตามวันปัจจุบันอัตโนมัติ พร้อมแจ้งเตือนรอบที่ต้องดูแลเป็นพิเศษ
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm sm:gap-space-md">
+<button class="inline-flex items-center justify-center gap-space-xs px-6 py-3 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all duration-200 hover:shadow-lg active:scale-95" id="openAddModalBtn" type="button">
+<span class="material-symbols-outlined text-title-md">add_circle</span>
+<span class="">+ เพิ่มพนักงานใหม่</span>
+</button>
+<a class="inline-flex items-center justify-center gap-space-xs px-6 py-3 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container hover:text-primary transition-all duration-200" data-path="monthly-summary" href="#">
+<span class="material-symbols-outlined text-title-md text-secondary">calendar_month</span>
+<span class="">ดูสรุปรายเดือน 📅</span>
+</a><div class="relative inline-block" id="exportDropdownWrapper"><button type="button" id="exportDropdownBtn" onclick="const m=document.getElementById('exportMenuDropdown'); m.classList.toggle('hidden');" class="inline-flex items-center justify-center gap-space-xs px-5 py-3 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-secondary-fixed/30 hover:text-secondary transition-all duration-200"><span class="material-symbols-outlined text-title-md text-secondary">file_download</span><span class="">ส่งออกข้อมูล (Excel/CSV)</span><span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span></button><div id="exportMenuDropdown" class="hidden absolute right-0 mt-2 w-64 bg-surface-container-lowest rounded-2xl shadow-xl border border-surface-container-high/60 p-1.5 z-50 flex flex-col gap-1"><button type="button" onclick="document.getElementById('exportMenuDropdown').classList.add('hidden');" class="flex items-center gap-3 w-full p-2.5 rounded-xl hover:bg-surface-container transition-colors text-left group"><div class="w-8 h-8 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-secondary flex-shrink-0 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-sm">table_view</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">ส่งออกทั้งหมด (8 รายการ)</span><span class="font-body-sm text-body-sm text-on-surface-variant">ดาวน์โหลดข้อมูลพนักงานทุกคน (.xlsx)</span></div></button><button type="button" onclick="document.getElementById('exportMenuDropdown').classList.add('hidden');" class="flex items-center gap-3 w-full p-2.5 rounded-xl hover:bg-surface-container transition-colors text-left group"><div class="w-8 h-8 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary flex-shrink-0 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-sm">filter_alt</span></div><div class="flex flex-col"><div class="flex items-center gap-1"><span class="font-label-md text-label-md text-on-surface">ส่งออกเฉพาะที่กรองอยู่</span><span class="px-1.5 py-0.5 rounded bg-primary-fixed font-label-sm text-label-sm text-on-primary-fixed-variant">ตามตัวกรอง</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">ดาวน์โหลดเฉพาะรายชื่อที่แสดงผล (.csv)</span></div></button></div></div>
+</div>
+</div>
+</div>
+<!-- KPI Mini Cards (4 Metrics) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: พนักงานทั้งหมด -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-space-md flex items-center justify-between shadow-sm overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">พนักงานทั้งหมด</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface" id="totalCountDisplay">8</span>
+<span class="font-body-md text-body-md text-on-surface-variant">คน</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">groups</span>
+          ในระบบรอบประเมินปีนี้
+        </span>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">badge</span>
+</div>
+</div>
+<!-- Card 2: 🔴 เกินกำหนด -->
+<div class="relative bg-error-container/40 rounded-2xl p-space-md flex items-center justify-between shadow-sm overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-md text-label-md text-error font-semibold">เกินกำหนด</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-error-container" id="overdueCountDisplay">1</span>
+<span class="font-body-md text-body-md text-on-error-container">คน</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-error-container font-medium mt-1">
+          ⚠️ ต้องรีบดำเนินการด่วน
+        </span>
+</div>
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center text-error group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">priority_high</span>
+</div>
+</div>
+<!-- Card 3: 🟡 ใกล้ครบกำหนด -->
+<div class="relative bg-surface-container-high rounded-2xl p-space-md flex items-center justify-between shadow-sm overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-on-primary-fixed-variant font-semibold">ใกล้ครบกำหนด (≤7 วัน)</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface" id="upcomingCountDisplay">2</span>
+<span class="font-body-md text-body-md text-on-surface-variant">คน</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+          เตรียมเอกสารสรุป
+        </span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">alarm</span>
+</div>
+</div>
+<!-- Card 4: 🟢 ปกติ -->
+<div class="relative bg-secondary-fixed/30 rounded-2xl p-space-md flex items-center justify-between shadow-sm overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-secondary-fixed-variant font-semibold">ปกติ</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface" id="normalCountDisplay">5</span>
+<span class="font-body-md text-body-md text-on-surface-variant">คน</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-secondary-container mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+          ระยะเวลายังปลอดภัย
+        </span>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">sentiment_satisfied</span>
+</div>
+</div>
+</div>
+<!-- Main Card: Employee Review Table Section -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-md lg:p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Table Header & Controls -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-title-md">sort</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">ลำดับคิวการประเมิน (Priority Queue)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">เรียงลำดับคนที่เกินกำหนดและใกล้ครบกำหนดมากที่สุดไว้บนสุดเสมอ</p>
+</div>
+</div>
+<!-- Quick Filter / Search Filter -->
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-title-md">search</span>
+<input class="pl-9 pr-4 py-2 text-body-md font-body-md bg-surface-container-low text-on-surface rounded-full focus:outline-none focus:bg-surface-container transition-colors w-48 sm:w-64" id="searchInput" placeholder="ค้นหาชื่อพนักงาน..." type="text">
+</div>
+<div class="px-3 py-2 rounded-full bg-surface-container-low font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-title-md">calendar_today</span>
+<span class="">วันนี้: 4 ก.พ. 2025</span>
+</div>
+</div>
+</div><div class="flex flex-wrap items-center justify-between gap-space-sm py-1 border-b border-surface-container-high/60" id="statusFilterContainer"><div class="flex flex-wrap items-center gap-space-xs"><button type="button" data-status="all" class="status-filter-btn inline-flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary"><span class="material-symbols-outlined text-sm">apps</span><span class="">ทั้งหมด</span><span class="px-2 py-0.5 rounded-full bg-surface/20 font-label-sm text-label-sm ml-0.5">8</span></button><button type="button" data-status="overdue" class="status-filter-btn inline-flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface hover:bg-error-container/50 hover:text-error"><span class="w-2 h-2 rounded-full bg-error animate-ping"></span><span class="material-symbols-outlined text-sm text-error">priority_high</span><span class="">เกินกำหนด</span><span class="px-2 py-0.5 rounded-full bg-error/15 text-error font-label-sm text-label-sm ml-0.5 font-bold">1</span></button><button type="button" data-status="upcoming" class="status-filter-btn inline-flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed-variant"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="material-symbols-outlined text-sm text-primary">schedule</span><span class="">ใกล้ครบกำหนด (≤ 7 วัน)</span><span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm ml-0.5 font-bold">2</span></button><button type="button" data-status="normal" class="status-filter-btn inline-flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface hover:bg-secondary-fixed/40 hover:text-secondary"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="material-symbols-outlined text-sm text-secondary">check_circle</span><span class="">ปกติ</span><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm ml-0.5 font-bold">5</span></button></div><div class="hidden sm:flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-sm text-primary">filter_list</span><span class="">คลิกแท็บเพื่อกรองตามเงื่อนไข</span></div></div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse min-w-[760px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md rounded-2xl">
+<th class="py-3 px-4 rounded-l-xl">ชื่อพนักงาน</th>
+<th class="py-3 px-4">วันเริ่มงาน</th>
+<th class="py-3 px-4">วันครบกำหนด Review</th>
+<th class="py-3 px-4">วันทำงานที่ผ่านมา (เว้น ส-อา)</th>
+<th class="py-3 px-4">สถานะ Review</th>
+<th class="py-3 px-4 rounded-r-xl text-center">จัดการ</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface" id="employeeTableBody">
+<!-- Row 1: Overdue -->
+<tr class="bg-error-container/40 hover:bg-error-container/50 transition-colors group rounded-xl shadow-sm ring-2 ring-error/20" data-status="overdue">
+<td class="py-3.5 px-4 rounded-l-xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-error text-on-error font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm ring-2 ring-error/30 animate-pulse">
+                  ชญ
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold">ชาญชัย ญาติเจริญ</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">priority_high</span>เร่งด่วน
+</span>
+</div>
+<span class="font-body-sm text-body-sm text-error font-medium">UX Designer • ฝ่ายพัฒนาผลิตภัณฑ์</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-on-surface-variant font-medium">1 พ.ย. 2024</td>
+<td class="py-3.5 px-4 font-title-md text-error font-bold">1 ก.พ. 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 font-label-md text-label-md text-error font-semibold shadow-xs">
+<span class="material-symbols-outlined text-sm text-error">work_history</span>
+                66 วันทำงาน
+              </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error text-on-error font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-on-error animate-ping"></span>
+<span class="">🔴 เกินกำหนด (เลย 3 วัน)</span>
+</span>
+</td>
+<td class="py-3.5 px-4 text-center rounded-r-xl">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข" type="button">
+<span class="material-symbols-outlined text-title-md">edit</span>
+</button>
+<button class="p-2 rounded-full text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="this.closest('tr').remove();" title="ลบ" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Urgent (4 days) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-status="upcoming">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                  นภ
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">นภัสสร อ่อนหวาน</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">HR Specialist • ฝ่ายบุคคล</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-on-surface-variant">10 พ.ย. 2024</td>
+<td class="py-3.5 px-4 font-title-md text-on-surface font-medium">8 ก.พ. 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">work_history</span>
+                60 วันทำงาน
+              </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="">🟡 ใกล้ครบกำหนด (เหลือ 4 วัน)</span>
+</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข" type="button">
+<span class="material-symbols-outlined text-title-md">edit</span>
+</button>
+<button class="p-2 rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/50 transition-colors" onclick="this.closest('tr').remove();" title="ลบ" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Urgent (7 days) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-status="upcoming">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                  กช
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">กชกร รุ่งเรือง</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Frontend Developer • ทีมวิศวกรรมซอฟต์แวร์</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-on-surface-variant">15 พ.ย. 2024</td>
+<td class="py-3.5 px-4 font-title-md text-on-surface font-medium">11 ก.พ. 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">work_history</span>
+                57 วันทำงาน
+              </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="">🟡 ใกล้ครบกำหนด (เหลือ 7 วัน)</span>
+</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข" type="button">
+<span class="material-symbols-outlined text-title-md">edit</span>
+</button>
+<button class="p-2 rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/50 transition-colors" onclick="this.closest('tr').remove();" title="ลบ" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Normal (28 days) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-status="normal">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                  ธน
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">ธนวัฒน์ สุขสำราญ</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Backend Engineer • ทีมวิศวกรรมซอฟต์แวร์</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-on-surface-variant">1 ธ.ค. 2024</td>
+<td class="py-3.5 px-4 font-title-md text-on-surface font-medium">4 มี.ค. 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">work_history</span>
+                45 วันทำงาน
+              </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">🟢 ปกติ (เหลืออีก 28 วัน)</span>
+</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข" type="button">
+<span class="material-symbols-outlined text-title-md">edit</span>
+</button>
+<button class="p-2 rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/50 transition-colors" onclick="this.closest('tr').remove();" title="ลบ" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Normal (42 days) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-status="normal">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                  วล
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">วลัยลักษณ์ ทรัพย์มาก</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Marketing Lead • การตลาดดิจิทัล</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-on-surface-variant">15 ธ.ค. 2024</td>
+<td class="py-3.5 px-4 font-title-md text-on-surface font-medium">18 มี.ค. 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">work_history</span>
+                35 วันทำงาน
+              </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">🟢 ปกติ (เหลืออีก 42 วัน)</span>
+</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข" type="button">
+<span class="material-symbols-outlined text-title-md">edit</span>
+</button>
+<button class="p-2 rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/50 transition-colors" onclick="this.closest('tr').remove();" title="ลบ" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Normal (60 days) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-status="normal">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                  ศภ
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">ศุภชัย ปัญญาวงศ์</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Customer Support • ทีมดูแลลูกค้า</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-on-surface-variant">5 ม.ค. 2025</td>
+<td class="py-3.5 px-4 font-title-md text-on-surface font-medium">5 เม.ย. 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">work_history</span>
+                21 วันทำงาน
+              </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">🟢 ปกติ (เหลืออีก 60 วัน)</span>
+</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข" type="button">
+<span class="material-symbols-outlined text-title-md">edit</span>
+</button>
+<button class="p-2 rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/50 transition-colors" onclick="this.closest('tr').remove();" title="ลบ" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Normal (75 days) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-status="normal">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                  ปร
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">ปรมินทร์ รัตนะ</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DevOps Engineer • โครงสร้างพื้นฐาน</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-on-surface-variant">20 ม.ค. 2025</td>
+<td class="py-3.5 px-4 font-title-md text-on-surface font-medium">20 เม.ย. 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">work_history</span>
+                11 วันทำงาน
+              </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">🟢 ปกติ (เหลืออีก 75 วัน)</span>
+</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข" type="button">
+<span class="material-symbols-outlined text-title-md">edit</span>
+</button>
+<button class="p-2 rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/50 transition-colors" onclick="this.closest('tr').remove();" title="ลบ" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 8: Normal (80 days) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-status="normal">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                  มธ
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">มณฑิรา ธรรมรงค์</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Content Creator • การตลาดดิจิทัล</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-on-surface-variant">25 ม.ค. 2025</td>
+<td class="py-3.5 px-4 font-title-md text-on-surface font-medium">25 เม.ย. 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">work_history</span>
+                7 วันทำงาน
+              </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">🟢 ปกติ (เหลืออีก 80 วัน)</span>
+</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข" type="button">
+<span class="material-symbols-outlined text-title-md">edit</span>
+</button>
+<button class="p-2 rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/50 transition-colors" onclick="this.closest('tr').remove();" title="ลบ" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Whimsical Footer Strip inside Table Section -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/50 rounded-2xl p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-lg">🐱</span>
+<span class="">คำนวณเว้นวันหยุดเสาร์และอาทิตย์ตามมาตรฐานนโยบายบริษัทอย่างเคร่งครัด</span>
+</div>
+<div class="flex items-center gap-2"><span class="font-label-sm text-label-sm text-on-surface-variant" id="filteredCountLabel">แสดงทั้งหมด 8 รายการ</span></div>
+</div>
+</div>
+<!-- Interactive Modal: + เพิ่มพนักงานใหม่ -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-background/40 backdrop-blur-sm hidden transition-opacity" id="addEmployeeModal">
+<div class="relative w-full max-w-lg bg-surface-container-lowest rounded-3xl p-space-lg lg:p-space-xl shadow-2xl flex flex-col gap-space-md transform scale-95 transition-transform duration-200" id="modalBox">
+<!-- Modal Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary text-xl">
+            🐾
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">เพิ่มพนักงานใหม่</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">บันทึกข้อมูลเพื่อเริ่มคำนวณวันทดลองงานอัตโนมัติ</p>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-headline-sm">close</span>
+</button>
+</div>
+<!-- Form Inputs -->
+<form class="flex flex-col gap-space-md" id="addEmployeeForm" onsubmit="event.preventDefault();">
+<!-- Name Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="empName">
+            ชื่อ-นามสกุลพนักงาน <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-title-md">person</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low text-on-surface rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container text-body-md font-body-md transition-all" id="empName" placeholder="เช่น สมชาย สายขยัน" required="" type="text">
+</div>
+</div>
+<!-- Start Date Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="empStartDate">
+            วันเริ่มงาน <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-title-md">calendar_today</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low text-on-surface rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container text-body-md font-body-md transition-all" id="empStartDate" required="" type="date">
+</div>
+</div>
+<!-- Review Due Date Field -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="empReviewDate">
+              วันครบกำหนด Review <span class="text-error">*</span>
+</label>
+<span class="font-body-sm text-body-sm text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-sm">info</span>
+              ต้องอยู่หลังวันเริ่มงานเสมอ
+            </span>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-title-md">event_available</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low text-on-surface rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container text-body-md font-body-md transition-all" id="empReviewDate" required="" type="date">
+</div>
+</div>
+<!-- Warm Helper Note Box -->
+<div class="p-space-sm bg-primary-fixed/40 rounded-2xl flex items-start gap-space-xs text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-title-md mt-0.5 text-primary">tips_and_updates</span>
+<span class="font-body-sm text-body-sm leading-relaxed">
+            ระบบจะคำนวณจำนวนวันทำงานจริง (เว้นเสาร์-อาทิตย์) และจัดระดับสถานะความเร่งด่วนให้อัตโนมัติทันทีที่บันทึก
+          </span>
+</div>
+<!-- Modal Actions -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs mt-space-xs">
+<button class="px-5 py-2.5 rounded-full font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" id="cancelModalBtn" type="button">
+            ยกเลิก
+          </button>
+<button class="px-7 py-2.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-md hover:bg-primary transition-all active:scale-95" id="saveEmployeeBtn" type="button">
+            บันทึกข้อมูล
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Tiny Sweet Notification Toast -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-surface-container-lowest shadow-xl rounded-2xl p-4 flex items-center gap-3" id="toastSuccess">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">บันทึกสำเร็จเรียบร้อย! 🐾</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">เพิ่มพนักงานเข้าสู่คิวการประเมินแล้ว</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const modal = document.getElementById('addEmployeeModal');
+    const modalBox = document.getElementById('modalBox');
+    const openBtn = document.getElementById('openAddModalBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const cancelBtn = document.getElementById('cancelModalBtn');
+    const saveBtn = document.getElementById('saveEmployeeBtn');
+    const toast = document.getElementById('toastSuccess');
+
+    const searchInput = document.getElementById('searchInput');
+    const tableBody = document.getElementById('employeeTableBody');
+
+    const empNameInput = document.getElementById('empName');
+    const startDateInput = document.getElementById('empStartDate');
+    const reviewDateInput = document.getElementById('empReviewDate');
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modalBox.classList.remove('scale-95');
+        modalBox.classList.add('scale-100');
+      }, 10);
+    }
+
+    function closeModal() {
+      modal.classList.add('opacity-0');
+      modalBox.classList.remove('scale-100');
+      modalBox.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 200);
+    }
+
+    openBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    cancelBtn.addEventListener('click', closeModal);
+
+    // Close on click backdrop
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    // Helper: calculate working days roughly between two dates (skipping sat/sun)
+    function calcWorkingDays(start, end) {
+      let count = 0;
+      let cur = new Date(start);
+      const fin = new Date(end);
+      while (cur <= fin) {
+        const day = cur.getDay();
+        if (day !== 0 && day !== 6) count++;
+        cur.setDate(cur.getDate() + 1);
+      }
+      return count;
+    }
+
+    saveBtn.addEventListener('click', () => {
+      const name = empNameInput.value.trim();
+      const startVal = startDateInput.value;
+      const reviewVal = reviewDateInput.value;
+
+      if (!name || !startVal || !reviewVal) {
+        alert('กรุณากรอกข้อมูลให้ครบถ้วนทุกช่องครับ');
+        return;
+      }
+
+      const sDate = new Date(startVal);
+      const rDate = new Date(reviewVal);
+
+      if (rDate <= sDate) {
+        alert('วันครบกำหนด Review ต้องอยู่หลังวันเริ่มงานเสมอ');
+        return;
+      }
+
+      // Add row
+      const initials = name.slice(0, 2);
+      const today = new Date('2025-02-04');
+      const workDays = calcWorkingDays(sDate, today > sDate ? today : sDate);
+      const diffTime = rDate - today;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+      let badgeHtml = '';
+      if (diffDays < 0) {
+        badgeHtml = `<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md">
+          <span class="w-2 h-2 rounded-full bg-error"></span>
+          <span>🔴 เกินกำหนด (เลย ${Math.abs(diffDays)} วัน)</span>
+        </span>`;
+      } else if (diffDays <= 7) {
+        badgeHtml = `<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md">
+          <span class="w-2 h-2 rounded-full bg-primary"></span>
+          <span>🟡 ใกล้ครบกำหนด (เหลือ ${diffDays} วัน)</span>
+        </span>`;
+      } else {
+        badgeHtml = `<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-container font-label-md text-label-md">
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+          <span>🟢 ปกติ (เหลืออีก ${diffDays} วัน)</span>
+        </span>`;
+      }
+
+      const newTr = document.createElement('tr');
+      newTr.className = 'hover:bg-surface-container-low/60 transition-colors group';
+      newTr.innerHTML = `
+        <td class="py-3.5 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-lg text-label-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+              ${initials}
+            </div>
+            <div class="flex flex-col">
+              <span class="font-title-md text-title-md text-on-surface font-semibold">${name}</span>
+              <span class="font-body-sm text-body-sm text-on-surface-variant">พนักงานเข้าใหม่</span>
+            </div>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 font-body-md text-on-surface-variant">${sDate.toLocaleDateString('th-TH', {day: 'numeric', month: 'short', year: 'numeric'})}</td>
+        <td class="py-3.5 px-4 font-title-md text-on-surface font-medium">${rDate.toLocaleDateString('th-TH', {day: 'numeric', month: 'short', year: 'numeric'})}</td>
+        <td class="py-3.5 px-4">
+          <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant">
+            <span class="material-symbols-outlined text-sm">work_history</span>
+            ${workDays} วันทำงาน
+          </span>
+        </td>
+        <td class="py-3.5 px-4">${badgeHtml}</td>
+        <td class="py-3.5 px-4 text-center">
+          <div class="flex items-center justify-center gap-1">
+            <button type="button" class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="แก้ไข">
+              <span class="material-symbols-outlined text-title-md">edit</span>
+            </button>
+            <button type="button" class="p-2 rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/50 transition-colors" title="ลบ" onclick="this.closest('tr').remove();">
+              <span class="material-symbols-outlined text-title-md">delete</span>
+            </button>
+          </div>
+        </td>
+      `;
+
+      tableBody.prepend(newTr);
+
+      // Update total counter
+      const totalDisplay = document.getElementById('totalCountDisplay');
+      if (totalDisplay) {
+        totalDisplay.innerText = parseInt(totalDisplay.innerText || '8') + 1;
+      }
+
+      // Reset & close
+      empNameInput.value = '';
+      startDateInput.value = '';
+      reviewDateInput.value = '';
+      closeModal();
+
+      // Show toast
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      }, 3000);
+    });
+
+    // Real-time table search
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const val = e.target.value.toLowerCase().trim();
+        const rows = tableBody.querySelectorAll('tr');
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          row.style.display = text.includes(val) ? '' : 'none';
+        });
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-lg"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">🐾 PawReview</span><span class="font-body-sm text-body-sm text-on-surface-variant">| ระบบติดตามวันครบกำหนด Review พนักงานแสนอบอุ่นสำหรับฝ่ายทรัพยากรบุคคล</span></div><div class="flex flex-wrap items-center justify-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">คู่มือการประเมิน (HR Guide)</a><a class="hover:text-primary transition-colors" href="#">เกณฑ์การให้คะแนน</a><a class="hover:text-primary transition-colors" href="#">นโยบายความเป็นส่วนตัว</a></div><div class="font-body-sm text-body-sm text-on-surface-variant text-center">© 2024 PawReview HR Solutions. Made with care for happy teams.</div></div></footer>
+
+</body></html>
