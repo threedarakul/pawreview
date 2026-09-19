@@ -28,6 +28,7 @@ import {
 import {
   createEmployee,
   updateEmployee,
+  deleteEmployee,
   EmployeeInput,
 } from "@/app/dashboard/actions";
 
@@ -99,8 +100,13 @@ export function DashboardClient({ employees }: { employees: Employee[] }) {
   }
 
   function handleDeleteConfirm() {
-    // ลบจริงจะทำใน Phase 4
+    if (!deletingEmployee) return;
+    const id = deletingEmployee.id;
     setDeletingEmployee(undefined);
+    startTransition(async () => {
+      await deleteEmployee(id);
+      router.refresh();
+    });
   }
 
   return (

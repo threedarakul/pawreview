@@ -40,6 +40,14 @@ export async function createEmployee(
   return { success: true };
 }
 
+export async function deleteEmployee(id: string): Promise<ActionResult> {
+  await db.delete(employees).where(eq(employees.id, id));
+
+  revalidatePath("/dashboard");
+  revalidatePath("/summary");
+  return { success: true };
+}
+
 export async function updateEmployee(
   id: string,
   input: EmployeeInput
